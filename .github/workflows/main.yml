@@ -22,6 +22,7 @@ jobs:
         port: ${{ secrets.PORT }}
         script: |
           cd /home/sftpuser/bloq
+          apt install git -y
           git clone https://github.com/keyhanjk/bloq.git
           cd bloq
           
