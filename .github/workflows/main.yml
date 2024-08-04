@@ -22,5 +22,6 @@ jobs:
         port: ${{ secrets.PORT }}
         script: |
           cd /home/sftpuser/bloq
-          git pull origin master
+          git clone https://github.com/keyhanjk/bloq.git
+          cd bloq
           
